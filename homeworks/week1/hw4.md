@@ -15,12 +15,12 @@
 
 1. 辦好 github 帳號，新建 repository。
 2. git remote add origin http://github.com/tsaike/joke.git: 將本地數據庫的目錄添加 github repository 的目標。
-3. git push origin master : 把笑話文檔提交到 github。
+3. git push -u origin master : 把笑話文檔提交到 github。
 
 但同時跟其它寫手一起共用同個檔案，會常常有版本不同步的問題，可以請寫手這樣做。
 
 1. git checkout -b joke-001 : 建立寫手的 branch，就可以先保留笑話主檔目前的版本
 2. 編輯笑話
 3. git commit -am 'joke-001' : 直接結合 add + commit的動作，但新的檔案還是要把 add 和 commit 拆開。
-4. git push orgin joke-001 : 把寫手 branch 的版本，推到遠端的 bramch。
+4. git push origin joke-001 : 把寫手 branch 的版本，推到遠端的 bramch。
 5. 在 github 發布 pull request，讓蔡哥看看沒問題就 merge 到主檔。

@@ -4,7 +4,6 @@
 ## 假設我今天去 Google 首頁搜尋框打上：JavaScript 並且按下 Enter，請說出從這一刻開始到我看到搜尋結果為止發生在背後的事情。
 瀏覽器會把 javascript 的資訊 request 給後端，後端會透過這個資料去找尋現有的網頁有提到 javascript 的，再將這些搜尋結果的資訊 response 回去給瀏覽器，讓使用者看到搜尋結果。
 
-
 ## 請列舉出 3 個「課程沒有提到」的 command line 指令並且說明功用
 1. uniq：可以將檔案中完全重複的行刪除，留下獨一無二的一行，這也是 unique 的縮寫。
 2. alias: 將 command line 指令設定別名。

@@ -20,6 +20,8 @@ module.exports = {
     'react',
   ],
   rules: {
-    "no-console": "off"
+    "no-console": "off",
+    "indent": "off",
+    "no-use-before-define": ["error", { "variables": false }]
   },
 };

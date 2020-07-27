@@ -43,19 +43,6 @@ table {
 	border-spacing: 0;
 }
 
-/* RWD Style */
-
-@media screen and (max-width: 768px) {
-    main {
-        width: 100%;
-    }
-    
-    form {
-        width: 100%;
-    }
-}
-
-
 /* CSS Style */
 body html{
     margin: 0;
@@ -158,4 +145,34 @@ footer {
     font-weight: 300;
     line-height: 60px;
     text-align: center;
+}
+
+/* RWD Style */
+
+@media screen and (max-width: 768px) {
+    main {
+        width: 100%;
+        
+    }
+    
+    form {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    main {
+        width: 100%;
+        
+    }
+    
+    form {
+        width: 100%;
+        max-width: 350px;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        align-items: center;
+    }
 }

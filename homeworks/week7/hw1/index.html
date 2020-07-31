@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Lazy Form</title>
+</head>
+<body>
+    <main>
+        <form class="formApplication" action="">
+            <h1>新拖延運動報名表單</h1>
+            <p>活動日期：2020/12/10 ~ 2020/12/11<br>活動地點：台北市大安區新生南路二段1號</p>
+            <div class="mustWrite">* 必填</div>
+            <div class="inputBlock required hide">
+                <h2>暱稱&nbsp;<span class="mustWrite">*</span></h2>
+                <input type="text" name="" id="" placeholder="您的回答">
+                <div class="error">請輸入暱稱</div>
+            </div>
+            <div class="inputBlock required hide">
+                <h2>電子郵件&nbsp;<span class="mustWrite">*</span></h2>
+                <input type="text" name="" id="" placeholder="您的電子郵件">
+                <div class="error">請輸入電子郵件</div>
+            </div>
+            <div class="inputBlock required hide">
+                <h2>手機號碼&nbsp;<span class="mustWrite">*</span></h2>
+                <input type="text" name="" id="" placeholder="您的手機號碼">
+                <div class="error">請輸入手機號碼</div>
+            </div>
+            <div class="inputBlock required hide">
+                <h2>報名類型 *&nbsp;<span class="mustWrite">*</span></h2>
+                <div class="radioGroup">
+                    <input type="radio" name="lazyType" id="1" value="躺在床上用想像力實作">躺在床上用想像力實作 <br>
+                    <input type="radio" name="lazyType" id="2" value="趴在地上滑手機找現成的">趴在地上滑手機找現成的
+                </div>
+                <div class="radio error">請選擇報名類型</div>
+            </div> 
+            <div class="inputBlock required hide">
+                <h2>怎麼知道這個活動的？ *&nbsp;<span class="mustWrite">*</span></h2>
+                <input type="text" name="" id="" placeholder="您的回答">
+                <div class="error">請輸入知道活動的原因</div> 
+            </div>
+                <h2 class="other">其他</h2>
+                <span class="otherSuggestions">對活動的一些建議</span><br>
+                <input type="text" name="" id="" placeholder="您的回答"> 
+            <button class="btn" type="submit">提交</button>
+            <h5>請勿透過表單送出您的密碼。</h5>
+        </form>
+    </main>
+    <footer>© 2020 © Copyright. All rights Reserved.</footer>
+</body>
+<script src="./main.js"></script>
+</html>

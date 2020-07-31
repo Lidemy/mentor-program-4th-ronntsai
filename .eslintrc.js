@@ -23,6 +23,6 @@ module.exports = {
     "no-console": "off",
     "indent": "off",
     "no-use-before-define": ["error", { "variables": false }],
-
+    "no-restricted-syntax": ["error", "ForInStatement", "LabeledStatement", "WithStatement"],
   },
 };

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>To Do List</h1>
+    <div class="container">
+        <h2>Add Something</h2>
+        <div class="addBox">
+            <input class="addText" type="text">
+            <button class="addBtn">Add</button>
+        </div>
+        <h2>To Do</h2>
+        <div class="toDoBox">
+            <ul class="block unDone">
+                <li>
+                    <input type="checkbox">
+                    <label>寫 LIOJ</label>
+                    <button class="delete">Delete</button>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <label>陶醉自己寫的 code</label>
+                    <button class="delete">Delete</button>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <label>改自己的爛 code</label>
+                    <button class="delete">Delete</button>
+                </li>
+            </ul>
+        </div>
+        <h2>COMPLETED</h2>
+        <div class="completedBox">
+            <ul class="block done">
+                <li>
+                    <input type="checkbox" checked="checked">
+                    <label>看課程</label>
+                    <button class="delete">Delete</button>
+                </li>
+                <li>
+                    <input type="checkbox" checked="checked">
+                    <label>預購振興券</label>
+                    <button class="delete">Delete</button>
+                </li>
+                <li>
+                    <input type="checkbox" checked="checked">
+                    <label>領錢</label>
+                    <button class="delete">Delete</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

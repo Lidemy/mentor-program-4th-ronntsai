@@ -121,3 +121,8 @@ button:hover {
     border-bottom: 2px solid #000;
     margin-bottom: 20px;
 }
+
+.done li label {
+    text-decoration: line-through;
+    color: #888;
+}

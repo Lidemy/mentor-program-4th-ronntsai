@@ -1,0 +1,219 @@
+/*CSS RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS Style */
+body html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    height: 1340px;
+    background-color: #eee;
+    padding-top: 50px
+}
+
+
+form {
+    position: relative;
+    max-width: 645px ;
+    margin: 0 auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-left: 42px;
+    padding-top: 54px;
+    border-top: 8px solid #fad312;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+form h1 {
+    font-weight: 400;
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+form p {
+    line-height: 30px;
+    margin-bottom: 22px;
+}
+
+form .mustWrite {
+    color: #e74149;
+    font-weight: 200;
+    font-size: 16px;
+    margin-bottom: 55px;
+}
+
+form h2 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 287px;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.radioGroup {
+    margin-bottom: 28px;
+}
+
+input[type="radio"]{
+    width: 20px;
+    margin-bottom: 23px;
+    background-color: #eee;
+}
+
+
+
+form .otherSuggestions {
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: -10px;
+    margin-bottom: 24px;
+}
+
+form .btn {
+    background-color: #fad312;
+    width: 92px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0px;
+}
+
+form h5 {
+    font-size: 14px;
+    margin-top: 21px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #202020;
+    width: 100%;
+    height: 60px;
+    color: #999;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 60px;
+    text-align: center;
+}
+
+.inputBlock {
+    position: relative;
+}
+
+.error {
+    color: #e74149;
+    position: absolute;
+    top: 70px;
+}
+
+.radio {
+    top: 110px;
+}
+
+.hide .error {
+    display: none;
+}
+
+/* RWD Style */
+
+@media screen and (max-width: 768px) {
+    main {
+        width: 100%;
+    }
+    
+    form {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    main {
+        width: 100%;
+        
+    }
+    
+    form {
+        width: 100%;
+        max-width: 350px;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    main {
+        width: 100%;
+        
+    }
+    
+    form {
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    form h1 {
+        font-size: 30px;
+    }
+}

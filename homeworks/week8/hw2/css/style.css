@@ -178,3 +178,56 @@ main h3 {
     width: 360px;
     margin-left: 16px;
 }
+
+@media (max-width: 1300px) {
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 930px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    header ul li {
+        padding: 5px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 730px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    header ul li {
+        padding: 5px;
+        font-size: 12px;
+    }
+    
+    header ul li:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    main h2 {
+        font-size: 24px;
+        margin-top: 30px;
+    }
+    
+    main h3 {
+        font-size: 14px;
+        margin-top: 20px;
+    }    
+}
+
+@media (max-width: 540px) {
+    header ul {
+        height: 140px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

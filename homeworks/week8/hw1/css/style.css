@@ -1,0 +1,434 @@
+/*CSS RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    transition-duration: 1.2s;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* CSS Style*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    height: 84px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-top: 26px;
+    margin-left: 96px;
+    color: #489846;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 480px;
+    font-size: 18px;
+    margin-right: 96px;
+}
+
+.navbar li {
+    width: 120px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.navbar li a {
+    display: block;
+    text-decoration: none;
+    color: #010101;
+    border-radius: 5px;
+    padding-top: 13px;
+    padding-bottom: 14px;
+}
+
+.navbar li a:hover {
+    background-color: #ff7286;
+    transition-duration: 0.8s;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://res.cloudinary.com/kenmec/image/upload/v1596982097/games-bn.png");
+    background-position: center center;
+    /* width: 1920px; */
+    height: 767px;
+}
+
+.first {
+    background-image: url("https://res.cloudinary.com/kenmec/image/upload/v1597068652/first.jpg");
+}
+
+.second {
+    background-image: url("https://res.cloudinary.com/kenmec/image/upload/v1597068653/second.jpg");
+}
+
+.third {
+    background-image: url("https://res.cloudinary.com/kenmec/image/upload/v1597068653/third.jpg");
+}
+
+.none {
+    background-image: none;
+    background-color: #000;
+}
+
+.activity {
+    max-width: 700px;
+    font-weight: 300;
+    font-size: 16px;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 40px 24px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.activityBox {
+    display: flex;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #666;
+}
+
+.activityBox:not(:first-child) {
+    margin-top: 19px;
+}
+
+.activity h2 {  
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: #5ec1b6;
+}
+
+.activity p {  
+    width: 319px;
+    line-height: 1.7;
+}
+
+.activity .prizeDetail {
+    width: 317px;
+}
+
+.activity span {
+    font-weight: 800;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.activity button {
+    width: 400px;
+    height: 55px;
+    background-color: #e62a45;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 36px;
+}
+
+.activity button:hover {
+    color: #eee;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result h2 {
+    font-size: 36px;
+    color: rgb(244, 240, 240);
+}
+
+.result button {
+    width: 400px;
+    height: 55px;
+    background-color: #e62a45;
+    border-radius: 8px;
+    color: #000;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 36px;    
+}
+
+.hide {
+    display: none;
+}
+
+footer .infos {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e8efee;
+    height: 186px;
+}
+
+footer .infos ul {
+    margin-top: 44px;
+    margin-left: 107px;
+    color: #484848;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+footer .infos ul li {
+    margin-bottom: 16px;
+}
+
+footer .infos h2 {
+    font-size: 36px;
+    color: #489846;  
+    text-align: right;  
+    margin-top: 35px;
+    margin-right: 109px;
+}
+
+footer .infos .media{
+    font-size: 14px;
+    color: #484848;
+    margin-top: 19px;
+}
+
+footer .copyright {
+    background-color: #35564b;
+    height: 48px;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 48px;
+    text-align: center;
+}
+
+/* RWD */
+
+@media (max-width: 860px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: 140px;
+    }
+    header h1 {
+        margin-left: 0px;
+    }
+
+    footer .infos {
+        height: 250px;
+    }
+ 
+    footer .infos h2 {
+        margin-right: 10px;
+    }
+ 
+    footer .infos ul {
+        margin-left: 10px;
+        width: 330px;
+    }
+ 
+    footer .infos ul li {
+        line-height: 25px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    header {
+       flex-direction: column;
+       align-items: center;
+       justify-content: flex-start;
+   } 
+   header h1 {
+       margin-left: 0px;
+       margin-bottom: 10px;
+   }
+   header .navbar {
+       margin: 0 auto;
+   }
+   
+   iframe {
+       width: 500px;
+   }
+
+   footer .infos {
+       height: 250px;
+   }
+
+   footer .infos h2 {
+       margin-right: 10px;
+   }
+
+   footer .infos ul {
+       margin-left: 10px;
+       width: 330px;
+   }
+
+   footer .infos ul li {
+       line-height: 25px;
+   }
+
+   footer .copyright {
+       font-size: 12px;
+   }
+
+}
+
+@media (max-width: 520px) {
+    header {
+        height: 120px;
+    }
+    footer .infos {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: 320px;
+    }
+    footer .infos ul {
+        margin: 0;
+        margin-top: 20px;
+        width: 300px;
+    }
+    footer .infos ul li {
+        margin-bottom: 8px;
+    }
+
+    footer .infos h2 {
+        margin: 0;
+        margin-top: 10px;
+    }
+ 
+}
+
+@media (max-width: 500px) {
+    .navbar {
+        width: 300px;
+        font-size: 16px;
+    }
+    footer .copyright h3 {
+        margin: 0 auto;
+        width: 280px;
+    }
+    .activity {
+        max-width: 300px;
+        font-weight: 300;
+        font-size: 10px;
+        background-color: #fff;
+        border-radius: 16px;
+        padding: 40px 24px 20px 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .activity h2 {  
+        margin-bottom: 40px;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+        color: #5ec1b6;
+    }
+    
+    .activity p {  
+        width: 170px;
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .activity span {
+        font-weight: 800;
+        font-size: 12px;
+        margin-right: 20px;
+    }
+
+    .activity .prizeDetail {
+        width: 217px;
+    }
+
+    .activity button {
+        width: 280px;
+        height: 55px;
+    }
+
+    .result h2 {
+        font-size: 24px;
+        color: rgb(244, 240, 240);
+    }
+
+    .result button {
+        width: 280px;
+        height: 55px; 
+    }
+}
+
+@media (max-width: 375px) {
+    header h1 {
+        font-size: 30px;
+    }
+    .navbar {
+        width: 250px;
+        font-size: 13px;
+    }
+    footer .infos ul {
+        width: 280px;
+        font-size: 12px;
+    }
+    footer .infos h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .activity button {
+        width: 180px;
+        height: 55px;
+    }
+    .result button {
+        width: 180px;
+        height: 55px; 
+    }
+}

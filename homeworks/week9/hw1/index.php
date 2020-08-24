@@ -1,6 +1,7 @@
 <?php
     session_start();
     require_once("conn.php");
+    require_once("utils.php");
 
     $result = $conn->query("SELECT u.nickname, c.comment, FROM_UNIXTIME(c.create_time) AS create_time FROM Ronn_comments c
                             LEFT JOIN Ronn_users u ON u.user_id = c.user_id ORDER BY c.create_time desc");
@@ -30,6 +31,7 @@
     <meta charset="UTF-8">
     <title>留言板</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header class="warning">注意！本站為練習網站，由於教學用途刻意忽略資安操作，註冊請勿使用任何真實的帳號。</header>
@@ -52,7 +54,8 @@
                 <span>暱稱：</span>
                 <input class="nametext" type="text" name="name" id="">
             </div> -->
-            <h3>安安 <?php echo $username?>，想說些什麼呢？</h3>
+            <h3>請勿 SQL Injection 我還沒做出來= =</h3>
+            <h3>安安 <?php echo escape($username)?>，想說些什麼呢？</h3>
             <h4>題外話，你在本版已經留言了 <span class="highlight"><?php echo $commentCount?></span> 次</h4>
             <div class="write__comment__box">
                 <textarea class="commenttext" name="comment" id="" cols="20" rows="6"></textarea>
@@ -69,10 +72,10 @@
                 <div class="card__avatar"></div>
                 <div class="card__body">
                     <div class="card__info">
-                        <span class="card__author"><?php echo $row['nickname']?></span>
+                        <span class="card__author"><?php echo escape($row['nickname'])?></span>
                         <span class="card__time"><?php echo $row['create_time']?></span>
                     </div>
-                    <p class="card__content"><?php echo $row['comment']?></p>
+                    <p class="card__content"><?php echo escape($row['comment'])?></p>
                 </div>
             </div>
             <?php } ?>

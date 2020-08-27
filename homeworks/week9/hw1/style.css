@@ -1,0 +1,136 @@
+body {
+    background-color: #f7f7f7;
+    margin: 0;
+}
+
+.warning {
+    background-color: #ffc4c6;
+    color: #a20606;
+    padding: 10px;
+    text-align: center;
+}
+
+.member__box {
+    margin-top: 15px;
+}
+
+.board {
+    background-color: #fff;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    box-shadow: 1px 1px 3px #e8e8e8;
+    border-radius: 5px;
+    padding-left: 30px;
+}
+
+.btn {
+    border: 1px solid #c2dffb;
+    background-color: #efefef;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 40px;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background: #efefef97;
+}
+
+.board .comment__hr {
+    background-color: #e8e8e8;
+    margin-bottom: 10px;
+}
+
+.comment__form {
+    margin-bottom: 30px;
+}
+
+.nickname__box, .register__box, .login__box {
+    font-size: 20px;
+}
+
+.register__box, .login__box {
+    margin-bottom: 10px;
+}
+
+.comment__form input {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.comment__form .write__comment__box {
+    display: flex;
+    margin-top: 20px;
+}
+
+.comment__form textarea{
+    width: 100%;
+    max-width: 450px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.comment__form input[type=submit] {
+    line-height: inherit;
+}
+
+.comment__submit {
+    margin-left: 15px;
+}
+
+.card {
+    margin: 20px 0;
+    min-height: 70px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.card__avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: rgb(124, 155, 217);
+    margin-right: 10px;
+    min-width: 50px;
+}
+
+.card__body {
+    width: 520px;
+}
+
+.card__author {
+    color: #5c9edc;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.card__time {
+    color: #a0a0a0;
+}
+
+.card__content {
+    margin-top: 10px;
+    white-space: pre-line;
+    word-break: break-all;
+}
+
+.error, .highlight {
+    color: #a20606;
+}
+
+.hide {
+    display: none;
+}
+
+.register__submit {
+    margin-top: 15px;
+}

@@ -22,6 +22,7 @@ module.exports = {
   rules: {
     "no-console": "off",
     "indent": "off",
+    "no-restricted-globals": "off",
     "no-use-before-define": ["error", { "variables": false }],
     "no-restricted-syntax": ["error", "ForInStatement", "LabeledStatement", "WithStatement"],
   },

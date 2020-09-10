@@ -1,0 +1,225 @@
+body {
+    background-color: #f7f7f7;
+    margin: 0;
+}
+
+.warning {
+    background-color: #ffc4c6;
+    color: #a20606;
+    padding: 10px;
+    text-align: center;
+}
+
+.member__box {
+    margin-top: 15px;
+}
+
+.board {
+    background-color: #fff;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    box-shadow: 1px 1px 3px #e8e8e8;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.btn {
+    border: 1px solid #c2dffb;
+    background-color: #efefef;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 40px;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background: #efefef97;
+}
+
+.board .comment__hr {
+    background-color: #e8e8e8;
+    margin-bottom: 10px;
+}
+
+.comment__form {
+    margin-bottom: 30px;
+}
+
+.nickname__box, .register__box, .login__box {
+    font-size: 20px;
+}
+
+.register__box, .login__box {
+    margin-bottom: 10px;
+}
+
+.comment__form input, .editUserBox input {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.editUserBox  {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.comment__form .write__comment__box {
+    display: flex;
+    margin-top: 20px;
+}
+
+.comment__form textarea{
+    width: 100%;
+    max-width: 450px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.comment__form input[type=submit], .editUserBox  input[type=submit]{
+    line-height: inherit;
+}
+
+.comment__submit {
+    margin-left: 15px;
+}
+
+.card {
+    margin: 20px 0;
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.card__avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: rgb(124, 155, 217);
+    margin-right: 10px;
+    min-width: 50px;
+}
+
+.card__body {
+    width: 520px;
+}
+
+.card__author {
+    color: #5c9edc;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.card__time {
+    color: #a0a0a0;
+}
+
+.card__content {
+    margin-top: 10px;
+    white-space: pre-line;
+    word-break: break-all;
+}
+
+.error, .highlight {
+    color: #a20606;
+}
+
+.hide {
+    display: none;
+}
+
+.register__submit {
+    margin-top: 15px;
+}
+
+.card__info a {
+    text-decoration: none;
+    color: rgb(139, 138, 138);
+    border: 1px solid rgb(124, 155, 217);
+    border-radius: 10px;
+    margin-left: 5px;
+    padding: 5px 10px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: rgb(139, 138, 138);
+    border: 1px solid rgb(124, 155, 217);
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;  
+    line-height: 30px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.card__info a:hover, .pagination a:hover {
+    transition-duration: 0.05s;
+    background-color: rgb(124, 155, 217);
+    color: white;
+}
+
+/* Table*/
+
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 30px 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table th, table td {
+    padding: 10px;
+}
+
+table th {
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.rightBtn {
+    line-height: 1;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px;
+    background-color: rgb(124, 155, 217);
+}
+
+.rightBtn:hover {
+    background-color: rgb(148, 179, 243);
+}
+
+.rightBlock {
+    background-color: rgb(243, 121, 121);
+}
+
+.rightBlock:hover {
+    background-color: rgb(246, 146, 146);
+}

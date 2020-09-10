@@ -28,8 +28,8 @@
           <div class="category-list">
             <form class="create_new_category" method="POST" action="handle_edit_category.php">
                 <span>文章類別：</span>
-                <input type="hidden" name="categoryid" value="<?php echo $_GET['id'] ?>">
-                <input type="text" class="categorytext" name="categoryname" value="<?php echo $_GET['name']; ?>">
+                <input type="hidden" name="categoryid" value="<?php echo escape($_GET['id']) ?>">
+                <input type="text" class="categorytext" name="categoryname" value="<?php echo escape($_GET['name']); ?>">
                 <input type="submit" class="category__btn">
             </form>
           </div>

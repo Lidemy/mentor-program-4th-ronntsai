@@ -124,12 +124,15 @@
     </main>
     <script src="index.js"></script>
     <script type="text/javascript">
-        const code = `<?php echo $_GET["responseCode"]; ?>`;
+        const code = `<?php echo escape($_GET["responseCode"]); ?>`;
         if (code === '1') {
             error.innerText = '你沒換暱稱被我發現了ㄛ！';
             error.classList.remove('hide');
         } else if (code === '2') {
             error.innerText = '權限不足！';
+            error.classList.remove('hide');
+        } else if (code === '3') {
+            error.innerText = '資料不齊全！';
             error.classList.remove('hide');
         }
     </script>

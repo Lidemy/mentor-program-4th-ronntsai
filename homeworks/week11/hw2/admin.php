@@ -48,7 +48,7 @@
         while($row = $result->fetch_assoc()) { 
       ?>
         <div class="admin-post">
-          <div class="admin-post__title"><a href="category_list.php?category_id=<?php echo $row['category_id']?>" class="category">[<?php echo escape($row['category_name']); ?>]</a href="category-list.php?category_id=<?php echo $row['category_id']?>"> <?php echo escape($row['title']);?></div>
+          <div class="admin-post__title"><a href="category_list.php?category_id=<?php echo escape($row['category_id'])?>" class="category">[<?php echo escape($row['category_name']); ?>]</a href="category-list.php?category_id=<?php echo $row['category_id']?>"> <?php echo escape($row['title']);?></div>
           <div class="admin-post__info">
             <div class="admin-post__article-time">
                 <div class="admin-post__created-at"><span>建立時間: </span><?php echo escape($row['create_time']); ?></div>

@@ -3,6 +3,16 @@
     require_once("conn.php");
     require_once("utils.php");
 
+    if (empty($_SESSION['account'])) {
+        header("Location: index.php?responseCode=2");
+        exit();
+    }
+
+    if (empty($_GET['id'])) {
+        header("Location: index.php?responseCode=3");
+        exit();
+    }
+
     $account = $_SESSION['account'];
     $commentid = $_GET['id'];
 

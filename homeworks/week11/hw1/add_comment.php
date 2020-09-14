@@ -1,33 +1,41 @@
 <?php
+    session_start();
     require_once('conn.php');
 
-    if (!empty($_GET['account']) && !empty($_POST['comment'])) {
+    if (empty($_SESSION['account'])) {
+        header("Location: index.php?responseCode=2");
+        exit();
+    }
 
-        $account = $_GET['account'];
-        $comment = $_POST['comment'];
+    if (empty($_GET['account']) || empty($_POST['comment'])) {
+        header("Location: index.php?responseCode=3");
+        exit();
+    }
 
-        $sql = "SELECT user_id FROM Ronn_users WHERE account =?";
-        
-        $stmt = $conn->prepare($sql);
-        $stmt->bind_param('s', $account);        
-        $result = $stmt->execute();
-        $result = $stmt->get_result();
-        $row = $result->fetch_assoc();
+    $account = $_GET['account'];
+    $comment = $_POST['comment'];
 
-        if (!$result) {
-            die($conn->error);
-        }
-        
-        $user_id = $row['user_id'];
+    $sql = "SELECT user_id FROM Ronn_users WHERE account =?";
+    
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param('s', $account);        
+    $result = $stmt->execute();
+    $result = $stmt->get_result();
+    $row = $result->fetch_assoc();
 
-        $sql = "INSERT INTO Ronn_comments (user_id, comment, create_time) VALUES (?, ?, UNIX_TIMESTAMP())";
-        $stmt = $conn->prepare($sql);
-        $stmt->bind_param('ss', $user_id, $comment);        
-        $result = $stmt->execute();
+    if (!$result) {
+        die($conn->error);
+    }
+    
+    $user_id = $row['user_id'];
 
-        if (!$result) {
-            die($conn->error);
-        }
+    $sql = "INSERT INTO Ronn_comments (user_id, comment, create_time) VALUES (?, ?, UNIX_TIMESTAMP())";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param('ss', $user_id, $comment);        
+    $result = $stmt->execute();
+
+    if (!$result) {
+        die($conn->error);
     }
     
     header("Location: index.php");

@@ -4,7 +4,8 @@
     require_once("utils.php");
 
     if ($_SESSION['role_id'] !== 1) {
-        header("Location: index.php");
+        header("Location: index.php?responseCode=2");
+        exit();
     }
 
     $page = 1;

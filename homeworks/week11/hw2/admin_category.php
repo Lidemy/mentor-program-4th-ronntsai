@@ -53,7 +53,7 @@
             <div class="admin-post__article-time">
                 <div class="admin-post__created-at"><span>建立時間: </span><?php echo escape($row['create_time']); ?></div>
             </div>
-            <a class="admin-post__btn" href="edit_category.php?id=<?php echo $row['category_id']?>&name=<?php echo escape($row['category_name']); ?>">
+            <a class="admin-post__btn" href="edit_category.php?id=<?php echo escape($row['category_id']);?>&name=<?php echo escape($row['category_name']); ?>">
               編輯
             </a>
             <a class="admin-post__btn delete" href="handle_delete_category.php?id=<?php echo $row['category_id']?>">

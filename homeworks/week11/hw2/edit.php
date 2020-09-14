@@ -45,7 +45,7 @@
     <div class="container">
       <div class="edit-post">
         <form action="handle_edit.php" method="POST">
-          <input type="hidden" name="articleId" value="<?php echo $articleId;?>">
+          <input type="hidden" name="articleId" value="<?php echo escape($articleId);?>">
           <span class="edit-post__title">
             發表文章：
           </span>

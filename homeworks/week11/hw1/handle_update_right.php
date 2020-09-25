@@ -2,7 +2,7 @@
     session_start();
     require_once('conn.php');
 
-    if (empty($_SESSION['account']) || $_SESSION['role_id'] === 1) {
+    if (empty($_SESSION['account']) || $_SESSION['role_id'] !== 1) {
         header("Location: index.php?responseCode=2");
         exit();
     }

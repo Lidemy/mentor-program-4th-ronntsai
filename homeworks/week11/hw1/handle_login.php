@@ -2,11 +2,6 @@
     session_start();
     require_once('conn.php');
 
-    if (empty($_SESSION['account'])) {
-        header("Location: login.php?responseCode=2");
-        exit();
-    }    
-
     if (empty($_POST['account']) || empty($_POST['password'])) {
         header("Location: login.php?responseCode=3");
         exit();

@@ -1,0 +1,233 @@
+/*CSS RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    transition-duration: 1.2s;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS Style */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    padding: 20px;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 10px;
+    line-height: 60px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+header ul li:not(:last-child) {
+    margin-right: 20px;
+}
+
+header ul li:hover {
+    cursor: pointer;
+    background-color: #695f60;
+    color: white;
+}
+
+main {
+    width: 100%;
+    height: 4000px;
+    background: linear-gradient(221deg, rgba(174, 158, 158, 0.577)16%, rgba(201, 140, 253, 0.2)84%);
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+}
+
+main h2 {
+    font-size: 32px;
+    margin-top: 40px;
+}
+
+main h3 {
+    font-size: 24px;
+    margin-top: 25px;
+}
+.wrap {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stream {
+    width: 360px;
+    background: #333;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.2s;
+    opacity: 0.9;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+.stream-box {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.stream > img {
+    width: 100%;
+}
+
+.stream__data {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+}
+
+.stream__avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 12px;
+    min-width: 64px;
+}
+
+.stream__avatar > img {
+    width: 100%;
+    height: 100%;
+}
+
+.stream__intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.stream__title {
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+}
+
+.stream:hover {
+    transform: scale(1.07);
+    filter: brightness(1.2);
+    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+.stream-empty {
+    width: 360px;
+    margin-left: 16px;
+}
+
+@media (max-width: 1300px) {
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 930px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    header ul li {
+        padding: 5px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 730px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    header ul li {
+        padding: 5px;
+        font-size: 12px;
+    }
+    
+    header ul li:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    main h2 {
+        font-size: 24px;
+        margin-top: 30px;
+    }
+    
+    main h3 {
+        font-size: 14px;
+        margin-top: 20px;
+    }    
+}
+
+@media (max-width: 540px) {
+    header ul {
+        height: 140px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

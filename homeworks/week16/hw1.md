@@ -1,0 +1,1 @@
+這題要先知道 setTimeout 是非同步函式，在 JavaScript 的運行環境中，非同步中要執行的部分(() => {console.log(x)})會丟到會放到事件佇列(Event queue)，等到同步的內容處理完後，才會執行 Event queue 的部分，因此結果會是 1 -> 3 -> 5 -> 2 -> 4。

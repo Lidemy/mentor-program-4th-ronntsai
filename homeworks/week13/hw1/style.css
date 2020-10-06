@@ -1,0 +1,114 @@
+html, body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaf0df;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.todo-status {
+  margin-bottom: 20px;
+}
+.todo-status #todo-count {
+  color: #b65f6b;
+}
+
+.todo-title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  display: flex;
+  margin-bottom: 10px;
+}
+.todo-input .todo-text {
+  width: 300px;
+}
+.todo-input .todo-text, .todo-input .todo-submit {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.todo-list .todo-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #faeeee;
+  border: solid 1px rgba(216, 216, 216, 0.673);
+  width: 500px;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.todo-list .todo-item .todo-name {
+  margin: 0 20px;
+  background-color: #faeeee;
+  border: none;
+}
+.todo-list .todo-item .btn-mark {
+  background-color: #f4f4f4;
+  border: solid 1px #f4f4f4;
+  margin-right: 5px;
+}
+.todo-list .todo-item .btn-delete {
+  background-color: #f7b0b0;
+  border: solid 1px #f7b0b0;
+}
+.todo-list .completed {
+  background-color: #ddfad7;
+}
+
+.todo-options {
+  width: 550px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  border: solid 1px rgba(174, 173, 173, 0.673);
+}
+.todo-options .todo-option-item {
+  padding: 5px 10px;
+  border: 2px solid #eaf0df;
+  border-radius: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.todo-options .todo-option-item:hover {
+  border: 2px solid #2169D9;
+}
+.todo-options .clear-all {
+  padding: 5px 12px;
+  color: #fff;
+  background-color: #f76a6a;
+  border: solid 2px #f76a6a;
+  border-radius: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.todo-options .clear-all:hover {
+  background-color: #fc9f9f;
+  border: solid 2px #fc9f9f;
+}
+.todo-options .checked {
+  background-color: #2169D9;
+  border: solid 2px #2169D9;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */

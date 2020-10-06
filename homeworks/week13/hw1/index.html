@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="todo-title">TO DO LIST</h1>
+        <h5 class="todo-status"> <span id="todo-count">0</span> 個未完成</h5>
+        <div class="todo-input">
+            <input type="text" class="todo-text form-control" placeholder="想記錄什麼？跟我說吧！" aria-describedby="basic-addon1">
+            <button type="button" class="btn btn-light todo-submit">送出</button>
+        </div>
+        <div class="todo-list">
+        </div>
+        <div class="todo-options">
+            <div class="todo-completed d-flex">
+                <div class="todo-option-item checked">全部</div>
+                <div class="todo-option-item">未完成</div>
+                <div class="todo-option-item">已完成</div>
+            </div>
+            <button class="clear-all">移除已完成待辦事項</button>
+            <button type="button" class="btn btn-save btn-primary">儲存</button>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
